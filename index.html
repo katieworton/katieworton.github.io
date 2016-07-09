@@ -7,23 +7,26 @@
   <link rel="stylesheet" href=".\font-awesome-4.6.3\css\font-awesome.min.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
-  <!-- favicon to add -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+    <!-- favicon to add -->
 </head>
 <style>
     
 * {
-	font-family: 'PT Mono', sans-serif;
+	font-family: 'PT Mono', serif;
+/*font-family: 'Roboto Condensed', sans-serif; */
 	font-weight:bold;
     font-size: auto;
     line-height: 0%;
     text-decoration:none;
+    letter-spacing: -0.025em;
 }
 
 html, body { margin: 0; padding: 0; }
 
 body {
 	text-align: center;
-	background-color:#F9FFFF; /* FFEBDE */
+	background-color:#FAFAFC; /* FFEBDE */
     /*text-decoration: underline;*/
 }
 
@@ -43,7 +46,7 @@ a:hover {
     
 text-decoration: none;
 	position: absolute;
-	background-color:#F9FFFF; /*box behind text*/
+	background-color:#FAFAFC; /*box behind text*/
 	padding-left:0.5em;
 	padding-right:0.5em;
 	top:48%;
@@ -101,6 +104,11 @@ h4 {
 	color:#F40034;
 }
 
+.invisible {
+	color:#393130;
+    opacity: 0;
+}
+
 .grey {
 	background-color:turquoise; /* bar */
 	position:absolute;
@@ -109,7 +117,7 @@ h4 {
 	top:48%;
 	margin-top:-80px;
 	height:180px;
-	opacity:0.6;
+	opacity:0.2;
 }
 
 @media (max-width: 600px) {
