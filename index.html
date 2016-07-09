@@ -16,7 +16,7 @@
 	font-weight:bold;
     font-size: auto;
     line-height: 0%;
-    text-decoration: none;
+    text-decoration:none;
 }
 
 html, body { margin: 0; padding: 0; }
@@ -24,8 +24,7 @@ html, body { margin: 0; padding: 0; }
 body {
 	text-align: center;
 	background-color:#F9FFFF; /* FFEBDE */
-    text-decoration: none;
-;
+    /*text-decoration: underline;*/
 }
 
 ::selection {
@@ -41,6 +40,7 @@ a:hover {
 }
 
 .contain {
+    
 text-decoration: none;
 	position: absolute;
 	background-color:#F9FFFF; /*box behind text*/
@@ -49,8 +49,11 @@ text-decoration: none;
 	top:48%;
 	margin: auto;
     /*vertical-align: middle;*/
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-48%);
 	margin-left:auto;
+    /*min-width: 30em; 
+    text-align: center; */
+    
 
     
 	display: inline-block;
@@ -112,11 +115,12 @@ h4 {
 @media (max-width: 600px) {
 
 h2 {
-	line-height:0.9;
+		line-height:20%;
 }
 
 h1, h2 {
 	font-size:4em;
+    line-height: 85%;
 }
 
 h3 {
@@ -130,18 +134,38 @@ h4 {
 }
 
 .contain {
-	margin-left:-190px;
+
+    text-decoration: none;
+	position: absolute;
+	background-color:#F9FFFF; /*box behind text*/
+	padding-left:0.5em;
+	padding-right:0.5em;
+	top: 48%
+	margin: auto;
+
+    transform: translate(-50%,-48%);
+	margin-left:auto;
+    min-width: 30em;
+    text-align: center;
 }
 
 .grey { 
-	height:120px;
+		background-color:turquoise; /* bar */
+	position:absolute;
+	margin:0;
+	width:100%;
+    top: 48%
+	margin-top:auto;
+    transform: translate(-0%,-48%);
+	height:100px;
+	opacity:0.6;
 }
 }
 
 @media (max-width:390px) {
 
 h2 {
-	line-height:0.5;
+	line-height:0.85;
 }
 
 h1, h2 {
@@ -150,20 +174,38 @@ h1, h2 {
 
 h3 {
 	font-size:1.6em;
-	line-height:1.4;
+	line-height:1;
 }
 
 h4 {
    font-size:1.4em;
-   line-height:0.6;
+   line-height:0.7;
 }
 
 .contain {
-	margin-left:-145px;
+	    text-decoration: none;
+	position: absolute;
+	background-color:#F9FFFF; /*box behind text*/
+	padding-left:0.5em;
+	padding-right:0.5em;
+	top: 48%
+	margin: auto;
+
+    transform: translate(-50%,-48%);
+	margin-left:auto;
+    min-width: 30em;
+    text-align: center;
 }
 
 .grey { 
+			background-color:turquoise; /* bar */
+	position:absolute;
+	margin:0;
+	width:100%;
+    top: 48%
+	transform: translate(-0%,-48%);
 	height:80px;
+	opacity:0.6;
 }
 }
 </style>
