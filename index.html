@@ -35,17 +35,27 @@ a:hover {
 }
 
 .contain {
+
 	position: absolute;
 	background-color:#F9FFFF; /*box behind text*/
 	padding-left:0.5em;
 	padding-right:0.5em;
 	top:48%;
-	margin:auto;
-	margin-top:-100px;
-	margin-left:-285px;
+	margin: auto;
+    vertical-align: middle;
+    transform: translate(-50%,-50%);
+	margin-left:auto;
     
 	display: inline-block;
 }
+    <div class="row">
+    <div class="col-xs-6 col-md-4 col-lg-2 vcenter">
+        <div style="height:10em;border:1px solid #000">Big</div>
+    </div><!--
+    --><div class="col-xs-6 col-md-8 col-lg-10 vcenter">
+        <div style="height:3em;border:1px solid #F00">Small</div>
+    </div>
+</div>
 
 h2 {
 	line-height:0.6;
@@ -83,8 +93,8 @@ h4 {
 	margin:0;
 	width:100%;
 	top:48%;
-	margin-top:-60px;
-	height:180px;
+	margin-top:-80px;
+	height:200px;
 	opacity:0.6;
 }
 
