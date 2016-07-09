@@ -13,6 +13,8 @@
 * {
 	font-family: 'PT Mono', sans-serif;
 	font-weight:bold;
+    font-size: auto;
+    line-height: 0%;
 }
 
 html, body { margin: 0; padding: 0; }
@@ -42,9 +44,10 @@ a:hover {
 	padding-right:0.5em;
 	top:48%;
 	margin: auto;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
     transform: translate(-50%,-50%);
 	margin-left:auto;
+
     
 	display: inline-block;
 }
@@ -58,26 +61,28 @@ a:hover {
 </div>
 
 h2 {
-	line-height:0.6;
+	line-height:20%;
 }
 
 h1, h2, h3, h4 {
 	padding:0px;
 	margin:0px;
+
 }
 
-h1, h2 {
+h1, h2 { /* heading */
 	font-size:6em;
+    line-height: 85%;
 }
 
 h3 {
 	font-size:3.3em;
-	line-height:1.4;
+	line-height:90%;
 }
 
 h4 {
    font-size:3em;
-   line-height:0.6;
+   line-height:0.9;
 }
 .dark {
 	color:#393130;
@@ -94,14 +99,14 @@ h4 {
 	width:100%;
 	top:48%;
 	margin-top:-80px;
-	height:200px;
+	height:180px;
 	opacity:0.6;
 }
 
 @media (max-width: 600px) {
 
 h2 {
-	line-height:0.5;
+	line-height:0.9;
 }
 
 h1, h2 {
@@ -110,7 +115,7 @@ h1, h2 {
 
 h3 {
 	font-size:2.2em;
-	line-height:1.4;
+
 }
 
 h4 {
