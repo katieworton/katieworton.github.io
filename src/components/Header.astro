@@ -31,8 +31,12 @@ import ThemeIcon from './ThemeIcon.astro';
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background: white;
+		background: rgb(198, 190, 255);
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+	}
+	:global(.dark) header {
+		background: rgb(42, 39, 70);
+		box-shadow: 0 2px 8px rgba(var(--white), 5%);
 	}
 	h2 {
 		margin: 0;
