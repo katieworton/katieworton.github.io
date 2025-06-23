@@ -23,6 +23,11 @@ const today = new Date();
 		color: rgb(var(--gray));
 		text-align: center;
 	}
+	:global(.dark) footer {
+		background: linear-gradient(var(--gray-gradient-dark)) no-repeat;
+		background-color: rgb(var(--black));
+		color: rgb(var(--white));
+	}
 	.social-links {
 		display: flex;
 		justify-content: center;
@@ -33,7 +38,13 @@ const today = new Date();
 		text-decoration: none;
 		color: rgb(var(--gray));
 	}
+	:global(.dark) .social-links a {
+		color: rgb(var(--white));
+	}
 	.social-links a:hover {
 		color: rgb(var(--gray-dark));
+	}
+	:global(.dark) .social-links a:hover {
+		color: rgb(var(--gray));
 	}
 </style>

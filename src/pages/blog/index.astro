@@ -58,6 +58,9 @@ const posts = (await getCollection('blog')).sort(
 				color: rgb(var(--black));
 				line-height: 1;
 			}
+			.dark .title {
+				color: rgb(var(--white));
+			}
 			.date {
 				margin: 0;
 				color: rgb(var(--gray));
@@ -65,6 +68,10 @@ const posts = (await getCollection('blog')).sort(
 			ul li a:hover h4,
 			ul li a:hover .date {
 				color: rgb(var(--accent));
+			}
+			.dark ul li a:hover h4,
+			.dark ul li a:hover .date {
+				color: var(--accent-light);
 			}
 			ul a:hover img {
 				box-shadow: var(--box-shadow);

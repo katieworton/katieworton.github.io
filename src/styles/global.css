@@ -7,11 +7,14 @@
 :root {
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
+	--accent-light: #838eff;
 	--black: 15, 18, 25;
+	--white: 255, 255, 255;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
 	--gray-dark: 34, 41, 57;
 	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
+	--gray-gradient-dark: rgba(var(--black), 50%), #000;
 	--box-shadow:
 		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
 		0 16px 32px rgba(var(--gray), 33%);
@@ -43,6 +46,11 @@ body {
 	font-size: 20px;
 	line-height: 1.7;
 }
+.dark body {
+	background: linear-gradient(var(--gray-gradient-dark)) no-repeat;
+	background-color: rgb(var(--black));
+	color: rgb(var(--gray-light));
+}
 main {
 	width: 720px;
 	max-width: calc(100% - 2em);
@@ -58,6 +66,14 @@ h6 {
 	margin: 0 0 0.5rem 0;
 	color: rgb(var(--black));
 	line-height: 1.2;
+}
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+	color: rgb(var(--white));
 }
 h1 {
 	font-size: 3.052em;
@@ -81,8 +97,14 @@ b {
 a {
 	color: var(--accent);
 }
+.dark a {
+	color: var(--accent-light);
+}
 a:hover {
 	color: var(--accent);
+}
+.dark a:hover {
+	color: var(--accent-light);
 }
 p {
 	margin-bottom: 1em;
@@ -109,6 +131,9 @@ code {
 	padding: 2px 5px;
 	background-color: rgb(var(--gray-light));
 	border-radius: 2px;
+}
+.dark code {
+	background-color: rgb(var(--gray-dark));
 }
 pre {
 	padding: 1.5em;
