@@ -136,9 +136,6 @@ code {
 	background-color: rgb(var(--gray-light));
 	border-radius: 2px;
 }
-.dark code {
-	background-color: rgb(var(--gray-dark));
-}
 pre {
 	padding: 1.5em;
 	border-radius: 8px;
