@@ -2,7 +2,7 @@
 title: 'Astro blog'
 description: 'About this blog'
 pubDate: 'Jun 26 2025'
-heroImage: '../../assets/blog-placeholder-3.jpg'
+heroImage: '../../assets/blog-placeholder-about.jpg'
 ---
 This is a little introduction to this site and how I quickly got my Astro blog (this site) up and running.
 
