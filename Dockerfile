@@ -4,7 +4,7 @@ WORKDIR /app
 COPY . .
 
 RUN npm ci --ignore-scripts --allow-git=none --min-release-age=7
-RUN npm run build
+RUN npm run build:dev
 
 ENV HOST=0.0.0.0
 ENV PORT=4321
